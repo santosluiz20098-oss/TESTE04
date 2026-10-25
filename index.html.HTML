@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="#analisador" class="pular" > pular para o analisador</a>
+    <header class="topo">
+        <a href="#inicio" class="logo"> IMPULSA  <span> ia</span></a>
+        <nav>
+            <a href="inicio"> início</a>
+            <a href="recursos"> recursos</a>
+            <a href="analisador"> meu currículo</a>
+            <a href="linkedin"> linkedln</a>
+        </nav>
+    </header>
+    <main>
+
+        <section class="hero" id="inicio">
+            <span class="etiqueta"> INTLIGÊNCIA ARTIFICIAL PARA SUA CARREIRA</span>
+            <H1>SEU PRÓXIMO EMPREGO
+                <SPan>COMEÇA AQUI.</SPan>
+            </H1>
+            <P>MELHORE SEU CURRÍCULO, PREPARE-SE PARA ENTREVISTA E DÊ O PRÓXIMO PASSO NA SUA CARREIRA</P>
+            <a href="#analisador" class="botao">
+                analisar meu currículo >
+            </a>
+        </section>
+        <section class="recursos" id="recursos" >
+            <h2>ferramentas para sua CARREIRA</h2>
+            <div class="cartoes">
+                <article class="cartao">
+                    <h3>análise de currículo</h3>
+                    <p>descubra pontos fortes e o  que podem melhorar.</p>
+                </article>
+                <article class="cartao">
+                    <h3>preparação para entrevista</h3>
+                    <p>pratique resposta para pergutas profissionais.</p>
+                </article>
+                <article class="cartao">
+                    <h3>plano de melhria</h3>
+                    <p>organize seus próximo passos profissionais.</p>
+                </article>
+            </div>
+        </section>
+        <section
+        class="analisador" id="analisador">
+              vamos melhorar seu currículo  </section>
+              <p>cole seu currículo  e informe o cargo desejado.</p>
+              <form id="formcurriculo">
+                <label for="cargo">
+                    qual cargo você procura?
+                </label>
+                <input type="text"
+                id="cargo"
+                placeholder="ex:desenvolvedor front - end">
+                <label for="curriculo">
+                    cole aqui seu currículo
+                </label>
+                <textarea  id="curriculo"
+                rows="8"
+                placeholder="formação,habilidade,experiências..."
+                required
+                ></textarea>
+                <div class="contador">
+                    <span id="contador" aria-live="polite">0 palavraas </span>
+                    <button type="button" id="btnExemplo" class="link"> usar currículo de Exemplo</button>
+                </div>
+                <div class="acoes">
+                    <button type="submit" class="botao">
+                        analisar currículo>
+                    </button>
+                    <button type="button" id="btnLimpar" class="botao">limpar</button>
+                </div>
+              </form>
+              <div id="resultado" aria-live="polite" tabindex="1"></div>
+              </section>
+              <section class="analisador" id="linkedin">
+                <h2>analise seu perfil do <span>linkedln</span></h2>
+                <p>envie um print do seu perfil. a imagem é lida no  seu navegado não enviador</p>
+                <form id="formLinkedin">
+                    <label for="licargo">qual cargo você procura?</label>
+                    <input type="text"
+                    id="licargo"
+                    placeholder="ex:analista de marketing"
+                    required>
+                    <label for="liImagem"> print do perfil(png ou jpg)</label>
+                    <input type="file" id="liImagem" accept="image/*">
+                    <img liPreview" class="preview" alt="Prévia do print enviado" hidden>
+                    <div class="acoes">
+                        <button type="button" id="liler" class=""></button>
+                        <button type="button" id="liler" class="botao secundario" disabled> ler texto da imagem</button>
+                    </div>
+                    <div id="liStatus" class="status" role="status" aria-live="polite"></div>
+
+        <label for="liTexto">Texto do perfil (revise ou cole aqui)</label>
+        <textarea
+          id="liTexto"
+          rows="8"
+          placeholder="Título, Sobre, Experiência, Formação, Competências..."
+          required
+        ></textarea>
+
+        <div class="acoes">
+          <button type="submit" class="botao">
+            Analisar perfil →
+          </button>
+        </div>
+      </form>
+
+      <div id="resultadoLinkedin" aria-live="polite" tabindex="-1"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Jobora IA — Sua carreira, seu próximo passo.</p>
+  </footer>
+        
+                </form>
+              </section>
+
+    </main>
+</body>
+</html>
